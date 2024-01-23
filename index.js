@@ -161,9 +161,6 @@ var playerHealth = initialHealth;
 /*===========================================FUNCTIONS===========================================*/
 start();
 
-console.log(`O tema é: ${theme}`);
-console.log(word);
-
 function start() {
   playerHealth = initialHealth;
 
@@ -210,7 +207,6 @@ function answerIs() {
 /*=====================POSSIBLE ANSWERS (FUNCTIONS)=====================*/
 
 function wrongAnswer() {
-  console.log("wrongAnswer()");
   changeTextContent(text_warning, "Errou!");
   damagePlayer(1);
   addTriedCharacter();
@@ -221,12 +217,10 @@ function alreadyTriedThisCharacter() {
 }
 
 function invalidAnswer() {
-  console.log("invalidAnswer()");
   changeTextContent(text_warning, "Insira uma letra válida!");
 }
 
 function correctAnswer(index) {
-  console.log("correct answer()");
   underlinedWord[index] = word[index];
   changeTextContent(text_word, underlinedWord.join(""));
   changeTextContent(text_warning, "");
