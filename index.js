@@ -1,125 +1,35 @@
 /*----------LISTAS DE PALAVRAS E TEMAS----------*/
-var animal = [
-  "Elefante",
-  "Girafa",
-  "Tigre",
-  "Pinguim",
-  "Borboleta",
-  "Leão",
-  "Cachorro",
-  "Gato",
-  "Hipopótamo",
-  "Crocodilo",
-  "Panda",
-  "Gorila",
-  "Zebra",
-  "Cavalo",
-  "Cobra",
-  "Águia",
-  "Orangotango",
-  "Papagaio",
-  "Tubarão",
-  "Aranha",
-  "Rinoceronte",
-  "Coala",
-  "Polvo",
-  "Serpente",
-  "Vaca",
-  "Macaco",
-  "Urso Polar",
-  "Golfinho",
-  "Esquilo",
-  "Caranguejo",
+var animal = ["Leão", "Elefante", "Tigre", "Girafa", "Orangotango", "Zebra", "Rinoceronte", "Hipopótamo", "Canguru", "Camaleão", "Panda",
+              "Cachorro", "Gato", "Peixe", "Pinguim", "Borboleta", "Cobra", "Pássaro", "Aranha", "Golfinho", "Polvo", "Urso", "Coala",
+              "Raposa", "Esquilo", "Guepardo", "Crocodilo", "Gorila", "Tubarão", "Caranguejo", "Tartaruga", "Avestruz", "Abelha", "Vaca",
+              "Cavalo", "Sapo", "Baleia", "Ovelha", "Gavião", "Lontra", "Morcego", "Foca", "Girino", "Libélula", "Mosquito", "Texugo",
+              "Hiena", "Lagarto", "Foca", "Lobo", "Águia", "Búfalo", "Chita", "Avestruz", "Gamba", "Doninha", "Enguia", "Carpa"
 ];
-var city = [
-  "Nova York",
-  "Londres",
-  "Tóquio",
-  "Paris",
-  "Roma",
-  "Sydney",
-  "Rio de Janeiro",
-  "Istambul",
-  "Moscou",
-  "Berlim",
-  "Toronto",
-  "Dubai",
-  "Bangkok",
-  "Los Angeles",
-  "Dubai",
-  "Amsterdã",
-  "Singapura",
-  "San Francisco",
-  "Rio de Janeiro",
-  "Barcelona",
-  "Viena",
-  "Atenas",
-  "Chicago",
-  "Hong Kong",
+var city = [ "Nova York", "Londres", "Tóquio", "Paris", "Roma", "Sydney", "Rio de Janeiro", "Istambul", "Moscou", "Berlim", "Toronto",
+            "Dubai", "Bangkok", "Los Angeles", "Dubai", "Amsterdã", "Singapura", "San Francisco", "Rio de Janeiro", "Barcelona", "Viena",
+            "Atenas", "Chicago", "Hong Kong",
 ];
-var famous = [
-  "Tom Hanks",
-  "Beyoncé",
-  "Leonardo DiCaprio",
-  "Oprah",
-  "David Beckham",
-  "Taylor Swift",
-  "Brad Pitt",
-  "Angelina Jolie",
-  "Cristiano Ronaldo",
-  "Adele",
-  "Will Smith",
-  "Jennifer Lopez",
-  "Dwayne Johnson",
-  "Kim Kardashian",
-  "Kanye West",
-  "Emma Watson",
-  "Justin Bieber",
-  "Rihanna",
-  "Katy Perry",
-  "Johnny Depp",
-  "Scarlett Johansson",
-  "Robert Downey Jr",
-  "Lady Gaga",
-  "Elon Musk",
-  "Bill Gates",
+var famous = [ "Tom Hanks", "Beyoncé", "Leonardo DiCaprio", "Oprah", "David Beckham", "Taylor Swift", "Brad Pitt", "Angelina Jolie",
+              "Cristiano Ronaldo", "Adele", "Will Smith", "Jennifer Lopez", "Dwayne Johnson", "Kim Kardashian", "Kanye West", "Emma Watson",
+              "Justin Bieber", "Rihanna", "Katy Perry", "Johnny Depp", "Scarlett Johansson", "Robert Downey Jr", "Lady Gaga", "Elon Musk", "Bill Gates",
 ];
 var food = [
-  "Maçã",
-  "Banana",
-  "Morango",
-  "Abacaxi",
-  "Cenoura",
-  "Brócolis",
-  "Arroz",
-  "Macarrão",
-  "Sushi",
-  "Hambúrguer",
-  "Pizza",
-  "Chocolate",
-  "Sorvete",
-  "Queijo",
-  "Leite",
-  "Café",
-  "Mel",
-  "Pão",
-  "Peixe",
-  "Frango",
-  "Ovo",
-  "Salada",
-  "Batata",
-  "Tomate",
-  "Uva",
-  "Nozes",
-  "Bacon",
-  "Azeite",
-  "Alface",
-  "Pêssego",
+  "Maçã", "Banana", "Morango", "Abacaxi", "Cenoura", "Brócolis", "Arroz", "Macarrão", "Sushi", "Hambúrguer", "Pizza", "Chocolate",
+  "Sorvete", "Queijo", "Leite", "Café", "Mel", "Pão", "Peixe", "Frango", "Ovo", "Salada", "Batata", "Tomate", "Uva", "Nozes", "Bacon",
+  "Azeite", "Alface", "Pêssego",
 ];
-var lists = [animal, city, famous, food];
+
+var object = ["Carro", "Computador", "Telefone", "Cadeira", "Mesa", "Caneta", "Relógio", "Livro", "Óculos", "Câmera", "Chave", "Lâmpada",
+              "Bicicleta", "Bolsa", "Rádio", "Teclado", "Sofá", "Travesseiro", "Fone de ouvido", "Garrafa", "Copo", "Controle remoto",
+              "Cachecol", "Guarda-chuva", "Escova", "Escova de dentes", "Secador de cabelo", "Faca", "Garfo", "Colher", "Prato", "Panela",
+              "Ventilador", "Abajur", "Tênis", "Bola", "Quadro", "Corda", "Cachorro de pelúcia", "Cadeado", "Alicate", "Martelo", "Serra",
+              "Ferro de passar", "Caixa", "Chapéu", "Cinto", "Carteira", "Chapéu", "Escova de cabelo", "Escova de maquiagem", "Cesta",
+              "Mapa", "Estante", "Aro", "Cadeira de balanço", "Tábua de passar", "Espelho", "Saco de dormir", "Tapete"];
+
+var lists = [animal, city, famous, food, object];
 
 /*-----------ESCOLHER TEMA E PALAVRA-----------*/
-var index = Math.floor(Math.random() * 4);
+var index = Math.floor(Math.random() * lists.length);
 var chosenTheme = lists[index];
 var word = chosenTheme[Math.floor(Math.random() * chosenTheme.length)];
 var theme = getTheme();
@@ -133,6 +43,8 @@ function getTheme() {
     return "Famoso(a)";
   } else if (index == 3) {
     return "Comida";
+  } else if (index == 4) {
+    return "Objeto";
   }
 }
 
@@ -303,17 +215,15 @@ function addTriedCharacter() {
 
 function playerWon() {
   changeTextContent(text_triedChars, "PARABÉNS, VOCÊ VENCEU!!");
+  changeTextContent(text_triesLeft, `Atualize a página para recomeçar`);
   button_send.disabled = true;
   input_input.disabled = true;
 }
 
 function playerLost() {
   changeTextContent(text_triedChars, "VOCÊ PERDEU!!");
-  changeTextContent(text_warning, `A palavra era ${word}`);
-  changeTextContent(
-    text_triesLeft,
-    `Você tem ${playerHealth} tentativas restantes`
-  );
+  changeTextContent(text_warning, `A resposta era ${word}`);
+  changeTextContent(text_triesLeft, `Atualize a página para recomeçar`);
   button_send.disabled = true;
   input_input.disabled = true;
 }
